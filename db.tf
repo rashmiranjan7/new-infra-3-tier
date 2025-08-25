@@ -19,11 +19,6 @@ resource "aws_db_instance" "swiggy-db" {
   multi_az                    = true
   skip_final_snapshot         = true
   publicly_accessible          = false
-
-  lifecycle {
-    prevent_destroy = true
-    ignore_changes  = all
-  }
 }
 
 
