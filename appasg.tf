@@ -22,7 +22,7 @@ resource "aws_launch_template" "swiggy-app-template" {
   name_prefix   = "swiggy-app-template"
   image_id      = "ami-0779c82fbb81e731c"
   instance_type = "t2.micro"
-  key_name      = "3tier-test"
+  key_name      = "BAPI3TIER"
 
   network_interfaces {
     security_groups             = [aws_security_group.swiggy-ec2-asg-sg-app.id]
